@@ -1,14 +1,18 @@
 package Fundamentals.FlowControl;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * @author wym
  */
 public class ForeachTest {
     public static void main(String[] args) {
-        changeListValue();
+
+        // changeListValue();
     }
+
+
 
     /**
      * 改变数据的值

@@ -4,6 +4,8 @@ package Fundamentals.DateType;
  * @author wym
  */
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashSet;
 
 /**
@@ -11,6 +13,7 @@ import java.util.HashSet;
  */
 public class StringTest {
     public static void main(String[] args) {
+        getDateDay();
         System.out.println("variability");
         variability();
         System.out.println("variability2");
@@ -47,5 +50,12 @@ public class StringTest {
         }
     }
 
+    public static void getDateDay(){
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());
+        calendar.add(Calendar.DAY_OF_MONTH, +1);
+        int i = calendar.get(Calendar.DATE);
+        System.out.println(i);
+    }
 
 }
